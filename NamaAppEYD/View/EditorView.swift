@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct EditorView: View {
     @State private var selectedTag: String? = "New Notes"
 
     var body: some View {
@@ -27,7 +27,7 @@ struct HomeView: View {
                     .foregroundColor(.gray)
             }
         } detail: {
-            NotesView(notes: selectedTag ?? "nil")
+            EditorDetailView(notes: selectedTag ?? "nil")
         }
         .navigationTitle("NamaAppEYD")
     }
